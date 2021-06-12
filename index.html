@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Bootstrap 5</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1 class="text-primary">Introducción a Bootstrap 5</h1>
+        <p>Texto</p>
+
+        <div class="row">
+            <div class="col-lg-10 col-md-9 col-sm-6">
+                <div class="alert alert-info" role="alert">
+                    <p>Columanas 1</p>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+
+                <div class="alert alert-warning" role="alert">
+                    <p>Columanas 2</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <a data-fancybox="gallery" href="img/anton-shuvalov-5NxaSygH3Xk-unsplash.jpg">
+                    <img class="img-fluid img-thumbnail" src="img/anton-shuvalov-5NxaSygH3Xk-unsplash_s.jpg" alt="">
+
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a data-fancybox="gallery" href="img/domenico-loia-hGV2TfOh0ns-unsplash.jpg">
+                    <img class="img-fluid img-thumbnail" src="img/domenico-loia-hGV2TfOh0ns-unsplash_s.jpg" alt="">
+                
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a data-fancybox="gallery" href="img/duy-hoang-mpukLDh-kbo-unsplash.jpg">
+                    <img class="img-fluid img-thumbnail" src="img/duy-hoang-mpukLDh-kbo-unsplash_s.jpg" alt="">
+                
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a data-fancybox="gallery" href="img/marliese-streefland-2l0CWTpcChI-unsplash.jpg">
+                    <img class="img-fluid img-thumbnail" src="img/marliese-streefland-2l0CWTpcChI-unsplash_s.jpg" alt="">
+                
+                </a>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <form class="mb-4" action="">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInputNombre">
+                        <label for="floatingInputNombre">Nombre</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Registrarse
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="mb-4" action="">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInputNombre">
+                                <label for="floatingInputNombre">Nombre</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput">
+                                <label for="floatingInput">Email</label>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="alert alert-info" role="alert">
+            <p>Fila uno</p>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
